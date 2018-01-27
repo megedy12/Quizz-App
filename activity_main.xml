@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/supercar"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Car Quiz app "
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#F44336"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+                                             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.What is the measuring unit of engine capacity ?"
+            android:textAppearance="@style/QStyle"
+            android:layout_marginBottom="10dp"/>
+
+        <CheckBox
+            android:id="@+id/Q1_CC_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cubic Centimeters (CC)"
+            android:textColor="#FBC02D"
+            android:textSize="12sp"
+            android:buttonTint="#FBC02D"/>
+
+        <CheckBox
+            android:id="@+id/Q1_L_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liter (L)"
+            android:textColor="#FBC02D"
+            android:textSize="12sp"
+            android:buttonTint="#FBC02D"/>
+        />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centimeteres (cm)"
+            android:textColor="#FBC02D"
+            android:textSize="12sp"
+            android:buttonTint="#FBC02D"/>
+        />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.What is the measuring unit of engine power ?"
+            android:textAppearance="@style/QStyle"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/Q2_hp_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horse power (hp)"
+            android:textColor="#FBC02D"
+            android:textSize="12sp"
+            android:buttonTint="#FBC02D"/>
+        />
+
+        <CheckBox
+            android:id="@+id/Q2_kw_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Killo Watt (KW)"
+            android:textColor="#FBC02D"
+            android:textSize="12sp"
+             android:buttonTint="#FBC02D"/>
+        />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Newten Meters (NM)"
+            android:textColor="#FBC02D"
+            android:textSize="12sp"
+            android:buttonTint="#FBC02D"/>
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.which engine has more horse power for the same engine capacity ?"
+            android:textAppearance="@style/QStyle"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/Q3_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Petrol engine"
+                android:textColor="#FBC02D"
+                android:textSize="12sp"
+                android:buttonTint="#FBC02D"
+               />
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diesel  engine "
+                android:textColor="#FBC02D"
+                android:textSize="12sp"
+                android:buttonTint="#FBC02D"/>
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.which engine has more tourge for the same engine capacity?"
+            android:textAppearance="@style/QStyle"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Petrol engine"
+                android:textColor="#FBC02D"
+                android:textSize="12sp"
+                android:buttonTint="#FBC02D"/>
+            />
+
+            <RadioButton
+                android:id="@+id/Q4_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diesel  engine "
+                android:textColor="#FBC02D"
+                android:textSize="12sp"
+                android:buttonTint="#FBC02D"/>
+
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.whiche engine has more milage per galon ?"
+            android:textAppearance="@style/QStyle"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Petrol engine"
+                android:textColor="#FBC02D"
+                android:textSize="12sp"
+                android:buttonTint="#FBC02D"/>
+            />
+
+            <RadioButton
+                android:id="@+id/Q5_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diesel  engine "
+                android:textColor="#FBC02D"
+                android:textSize="12sp"
+                android:buttonTint="#FBC02D"/>
+            />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6.what is the red line RPM for most cars ?"
+            android:textAppearance="@style/QStyle"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:id="@+id/Q6_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6000 RPM"
+                android:textColor="#FBC02D"
+                android:textSize="12sp"
+                android:buttonTint="#FBC02D"/>
+            />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5000 RPM"
+                android:textColor="#FBC02D"
+                android:textSize="12sp"
+                android:buttonTint="#FBC02D"/>
+            />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3000 RPM"
+                android:textColor="#FBC02D"
+                android:textSize="12sp"
+                android:buttonTint="#FBC02D"/>
+            />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7.what is the stoichiometric air fuel ratio ?"
+            android:textAppearance="@style/QStyle"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="#FBC02D"
+                android:textSize="12sp"
+                android:buttonTint="#FBC02D"/>
+            />
+
+            <RadioButton
+                android:id="@+id/Q7_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14.7"
+                android:textColor="#FBC02D"
+                android:textSize="12sp"
+                android:buttonTint="#FBC02D"/>
+            />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18"
+                android:textColor="#FBC02D"
+                android:textSize="12sp"
+                android:buttonTint="#FBC02D"/>
+            />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:onClick="submitAnswers"
+            />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
